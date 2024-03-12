@@ -476,12 +476,16 @@ a.btn.btn-primary.accept-cookies {
 }
 
 .accommodation-seciton {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .accommodation-part {
     box-shadow: 0 0 7px 0 #152c33;
     padding: 20px;
+}
+
+section.compare h2::before {
+    content: none;
 }
 
 .compare {
@@ -493,6 +497,7 @@ a.btn.btn-primary.accept-cookies {
 
         h2 {
             text-align: center;
+
         }
     }
 
@@ -523,6 +528,7 @@ a.btn.btn-primary.accept-cookies {
             margin: 0 auto;
             right: 0;
             border-radius: 8px;
+            opacity: 0.9;
 
             h3 {
                 color: $clr-white;
@@ -534,6 +540,7 @@ a.btn.btn-primary.accept-cookies {
             p {
                 color: $clr-white;
                 font-size: 15px;
+                line-height: 22px;
                 font-family: 'Gothic A1';
             }
         }
@@ -547,6 +554,10 @@ a.btn.btn-primary.accept-cookies {
             ;
         }
     }
+}
+
+.box.first {
+    background: #c8c3c3;
 }
 
 /*wheretosleep-css-end*/
