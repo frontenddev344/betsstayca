@@ -586,6 +586,49 @@ section.compare h2::before {
     }
 }
 
+.whatdocard {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    height: 100%;
+
+    h3 {
+        color: $clr-darkishgreen;
+    }
+
+    p {
+        margin: 25px 0;
+    }
+}
+
+.whatdocard .primary-btn {
+    background: $clr-darkishgreen;
+    color: $clr-white;
+    border: 1px solid $clr-darkishgreen;
+
+    &:hover {
+        background: transparent;
+
+        a {
+            color: $clr-darkishgreen !important;
+        }
+    }
+
+}
+
+.whatdocards-main {
+    padding: 60px 0;
+}
+
+.whatdocards-main .row {
+    row-gap: 20px;
+}
+
+.whatinner img {
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
 /*whatto-do-css-end*/
 
 /*# sourceMappingURL=style.css.map */

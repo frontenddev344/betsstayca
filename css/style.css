@@ -602,6 +602,44 @@ section.compare h2::before {
   height: 450px;
 }
 
+.whatdocard {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  height: 100%;
+}
+.whatdocard h3 {
+  color: rgba(3, 28, 36, 0.9294117647);
+}
+.whatdocard p {
+  margin: 25px 0;
+}
+
+.whatdocard .primary-btn {
+  background: rgba(3, 28, 36, 0.9294117647);
+  color: #fff;
+  border: 1px solid rgba(3, 28, 36, 0.9294117647);
+}
+.whatdocard .primary-btn:hover {
+  background: transparent;
+}
+.whatdocard .primary-btn:hover a {
+  color: rgba(3, 28, 36, 0.9294117647) !important;
+}
+
+.whatdocards-main {
+  padding: 60px 0;
+}
+
+.whatdocards-main .row {
+  row-gap: 20px;
+}
+
+.whatinner img {
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
 /*whatto-do-css-end*/
 
 
