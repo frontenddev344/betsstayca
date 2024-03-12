@@ -1,0 +1,97 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.66);
+    z-index: 0;
+    height: 550px;
+}
+
+.bannertitle {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    color: $clr-darkishgreen;
+    font-family: "Gothic A1", sans-serif;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: $clr-creme;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+
+    @include mq(md) {
+        font-size: 35px;
+    }
+
+    @include mq(sm) {
+        font-size: 25px;
+    }
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    color: $clr-darkishgreen;
+    margin-bottom: 25px;
+    max-width: 60%;
+    position: relative;
+
+    @include mq(xl) {
+        font-size: 32px;
+        line-height: 37px;
+        max-width: 100%;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: $clr-darkishgreen;
+        height: 2px;
+        width: 150px;
+        bottom: -10px;
+        left: 0;
+    }
+
+}
+
+h3 {
+    color: $clr-creme;
+    font-size: 27px;
+    line-height: normal;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+}

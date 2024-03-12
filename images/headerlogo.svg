@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167 33" width="167" height="33">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 39px;fill: #ffffff;font-weight: 400;font-family: "CormorantGaramond-Regular", "Cormorant Garamond" } 
+	</style>
+	<text id="Betsstayca" style="transform: matrix(1,0,0,1,4,28)" >
+		<tspan x="0" y="0" class="t0">B</tspan><tspan  y="0" class="t0">etsstayca
+</tspan>
+	</text>
+</svg>

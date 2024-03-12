@@ -1,0 +1,580 @@
+/*global start*/
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: "Cormorant Garamond", serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Roboto Slab", serif;
+}
+
+a:focus {
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.primary-btn {
+    background: $clr-white;
+    display: inline-block;
+    padding: 8px 30px;
+    color: $clr-darkishgreen;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid $clr-darkishgreen;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $clr-white;
+        color: $clr-white;
+    }
+
+    a {
+        &:hover {
+            color: $clr-white;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $clr-creme;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: $clr-darkishgreen;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+
+/*global end*/
+
+/*header start*/
+header.site-header {
+    background: transparent;
+    font-size: 18px;
+    padding: 14px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    transition: .3s;
+}
+
+header.site-header.sticky {
+    background: $clr-darkishgreen;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding: 14px 0;
+    position: fixed;
+}
+
+.site-header .site-nav ul li a.active {
+    color: $clr-white;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+
+header.site-header.sticky .site-nav ul li a:hover {
+    color: $clr-white;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.site-nav a {
+    padding: 8px 12px !important;
+    display: inline-block;
+    font-weight: 600;
+    color: $clr-white;
+    font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    transition: .3s;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+
+.site-header {
+    padding: 10px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.closed-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none !important;
+}
+
+/*header end*/
+
+
+
+/*footer-css-start*/
+.footer {
+    background: $clr-darkishgreen;
+    padding: 50px 0;
+
+    &-logo {
+        img {
+            max-width: 250px;
+        }
+    }
+
+    &-links {
+        h2 {
+            color: $clr-white;
+        }
+
+        li a {
+            color: $clr-white;
+            font-size: 18px;
+
+            &:hover {
+                color: $clr-creme;
+            }
+        }
+    }
+
+    &-adresse {
+        h2 {
+            color: $clr-white;
+        }
+
+        p {
+            color: $clr-darkishgreen;
+        }
+    }
+
+
+}
+
+.mails-names {
+    a {
+        color: $clr-white;
+        font-size: 20px;
+
+        &:hover {
+            color: $clr-creme;
+        }
+    }
+}
+
+.social-signals {
+    padding: 25px 0;
+
+    i {
+        color: $clr-white;
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+        margin: 0 10px;
+        border: 1px solid $clr-white;
+        border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        transition: .3s linear;
+
+        &:hover {
+            transform: translateY(-10px);
+            color: $clr-creme;
+        }
+    }
+}
+
+
+/*footer-css-end*/
+
+/*cookie start*/
+.cookie-alert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    left: 0;
+}
+
+.cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+
+    h4 {
+        font-size: 23PX;
+        color: $clr-darkishgreen;
+    }
+}
+
+a.btn.btn-primary.accept-cookies {
+    background: $clr-darkishgreen;
+    padding: 6px 22px;
+    font-size: 20px;
+    border: 1px solid $clr-darkishgreen;
+
+    &:hover {
+        background-color: transparent;
+        color: $clr-black;
+        border: 1px solid $clr-darkishgreen;
+    }
+}
+
+/*cookie end*/
+
+/*contact-css-start*/
+.contactbanner.banner {
+    background-image: url(../images/contactbanner.webp);
+    height: 450px;
+    position: relative;
+
+    &::after {
+        height: 450px;
+    }
+}
+
+.contacttext {
+    padding: 100px 0;
+
+    h3 {
+        color: $clr-darkishgreen;
+    }
+}
+
+/*contact-css-end*/
+
+/*privacy-policy start*/
+.privacy__section.banner {
+    background-image: url(../images/privacybanner.jpg);
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    text-align: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+        height: 450px;
+    }
+}
+
+.privacy-policy {
+    padding: 40px 0;
+
+    .content-wrap {
+        li {
+            font-size: 16px;
+            font-family: 'Gothic A1';
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 5px;
+                background: $clr-darkishgreen;
+                width: 5px;
+                border-radius: 30px;
+                left: -10px;
+                top: 8px;
+            }
+        }
+
+
+        h3 {
+            color: $clr-darkishgreen;
+        }
+
+        p {
+            color: $clr-black;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
+
+.terms {
+    padding: 40px 0;
+
+    .content-wrap {
+        li {
+            font-size: 16px;
+            font-family: 'Gothic A1';
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 5px;
+                background: $clr-darkishgreen;
+                width: 5px;
+                border-radius: 30px;
+                left: -10px;
+                top: 8px;
+            }
+        }
+
+        p {
+            color: $clr-black;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        h3 {
+            color: $clr-darkishgreen;
+        }
+    }
+}
+
+/*privacy-policy end*/
+
+/*terms-conditon start*/
+.terms__section.banner {
+    background-image: url(../images/termsbanner.jpg);
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+    z-index: -1;
+
+    &::after {
+        height: 450px;
+        z-index: -1;
+    }
+}
+
+/*terms-conditon-end/
+
+
+
+/*homebanner-css-start*/
+.homebanner.banner {
+    background-image: url(../images/homebanner.jpg);
+    height: 550px;
+    position: relative;
+}
+
+.homebanner.banner .bannertitle h1 {
+    max-width: 78%;
+    margin: 0 auto;
+}
+
+.topmain {
+    padding: 100px 0;
+    background-image: url(../images/bghotel.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background: rgb(238 231 218);
+        opacity: 0.9;
+    }
+}
+
+.topmain .container {
+    position: relative;
+    z-index: 2;
+}
+
+.topmain-picture img {
+    height: 100%;
+    min-height: 575px;
+    object-fit: cover;
+}
+
+/*homebanner-css-end*/
+
+/*wheretosleep-css-start*/
+.wheresleepbanner.banner {
+    background-image: url(../images/wheretosleep-banner.jpg);
+    height: 450px;
+    position: relative;
+    background-position: bottom;
+
+    &::after {
+        height: 450px;
+    }
+}
+
+.accommodation-seciton {
+    padding: 50px 0;
+}
+
+.accommodation-part {
+    box-shadow: 0 0 7px 0 #152c33;
+    padding: 20px;
+}
+
+.compare {
+    padding: 60px 0;
+    position: relative;
+
+    .heading {
+        padding-bottom: 45px;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .box {
+        position: relative;
+        overflow: hidden;
+        margin: 27px 0px;
+
+        &:hover {
+            .content-box {
+                bottom: 50%;
+                transform: translateY(50%);
+            }
+
+            img {
+                transform: scale(1.1) rotate(1.5deg);
+            }
+        }
+
+        .content-box {
+            position: absolute;
+            left: 0%;
+            width: 90%;
+            bottom: 2px;
+            transition: all .3s ease;
+            padding: 20px 30px;
+            background-color: rgb(3 28 36 / 80%);
+            margin: 0 auto;
+            right: 0;
+            border-radius: 8px;
+
+            h3 {
+                color: $clr-white;
+                font-size: 23px;
+                font-weight: 700;
+                padding-bottom: 6px;
+            }
+
+            p {
+                color: $clr-white;
+                font-size: 15px;
+                font-family: 'Gothic A1';
+            }
+        }
+
+        img {
+            height: 450px;
+            width: 100%;
+            object-fit: cover;
+            transition: all .3s ease;
+            border-radius: 8px;
+            ;
+        }
+    }
+}
+
+/*wheretosleep-css-end*/
+
+/*wheretoeat-css-start*/
+.whereeatbanner.banner {
+    background-image: url(../images/wheretosleep-banner.jpg);
+    height: 450px;
+    position: relative;
+
+    &::after {
+        height: 450px;
+    }
+}
+
+/*wheretoeat-css-end*/
+
+/*whatto-do-css-start*/
+.whatdobanner.banner {
+    background-image: url(../images/wheretosleep-banner.jpg);
+    height: 450px;
+    position: relative;
+
+    &::after {
+        height: 450px;
+    }
+}
+
+/*whatto-do-css-end*/
+
+/*# sourceMappingURL=style.css.map */
