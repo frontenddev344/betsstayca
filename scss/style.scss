@@ -680,11 +680,20 @@ section.compare h2::before {
     row-gap: 20px;
 }
 
-.whatinner img {
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 25px;
+.whatinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 100%;
+
+    img {
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 25px;
+    }
 }
+
 
 .whatdocards-main h2::before {
     content: none;

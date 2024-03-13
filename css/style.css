@@ -688,6 +688,13 @@ section.compare h2::before {
   row-gap: 20px;
 }
 
+.whatinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 100%;
+}
 .whatinner img {
   height: 250px;
   object-fit: cover;
