@@ -285,6 +285,7 @@ header.site-header.sticky .site-nav ul li a:hover {
 
 .social-signals {
   padding: 25px 0;
+  cursor: pointer;
 }
 .social-signals i {
   color: #fff;
