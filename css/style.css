@@ -637,7 +637,7 @@ section.compare h2::before {
 /*wheretosleep-css-end*/
 /*wheretoeat-css-start*/
 .whereeatbanner.banner {
-  background-image: url(../images/wheretosleep-banner.jpg);
+  background-image: url(../images/restaurantbanner.jpg);
   height: 450px;
   position: relative;
 }
@@ -648,7 +648,7 @@ section.compare h2::before {
 /*wheretoeat-css-end*/
 /*whatto-do-css-start*/
 .whatdobanner.banner {
-  background-image: url(../images/wheretosleep-banner.jpg);
+  background-image: url(../images/explorebanner.jpeg);
   height: 450px;
   position: relative;
 }
