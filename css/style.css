@@ -32,11 +32,6 @@ button {
   left: 50%;
   top: 50%;
 }
-@media screen and (max-width: 575px) {
-  .bannertitle {
-    max-width: 80%;
-  }
-}
 
 p {
   font-size: 17px;
@@ -55,7 +50,7 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -540,11 +535,6 @@ a.btn.btn-primary.accept-cookies:hover {
   background-image: url(../images/homebanner.jpg);
   height: 550px;
   position: relative;
-}
-
-.homebanner.banner .bannertitle h1 {
-  max-width: 78%;
-  margin: 0 auto;
 }
 
 .topmain {
