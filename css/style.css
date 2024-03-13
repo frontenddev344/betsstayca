@@ -37,7 +37,7 @@ p {
   font-size: 17px;
   font-weight: 500;
   line-height: normal;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
   font-family: "Gothic A1", sans-serif;
 }
 
@@ -64,7 +64,7 @@ h2 {
   line-height: 45px;
   font-weight: 600;
   font-family: "Cormorant Garamond", serif;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
   margin-bottom: 25px;
   max-width: 60%;
   position: relative;
@@ -79,7 +79,7 @@ h2 {
 h2::before {
   position: absolute;
   content: "";
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   height: 2px;
   width: 150px;
   bottom: -10px;
@@ -140,10 +140,10 @@ html {
   background: #fff;
   display: inline-block;
   padding: 8px 30px;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
   font-size: 18px;
   border-radius: 3px;
-  border: 1px solid rgba(3, 28, 36, 0.9294117647);
+  border: 1px solid #362c2c;
 }
 .primary-btn:hover {
   background-color: transparent;
@@ -163,7 +163,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   border-radius: 2px;
 }
 
@@ -191,7 +191,7 @@ header.site-header {
 }
 
 header.site-header.sticky {
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   padding: 14px 0;
@@ -210,7 +210,7 @@ header.site-header.sticky .site-nav ul li a:hover {
 
 .site-logo img {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .site-nav a {
@@ -252,7 +252,7 @@ header.site-header.sticky .site-nav ul li a:hover {
 /*header end*/
 /*footer-css-start*/
 .footer {
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   padding: 50px 0;
 }
 .footer-logo img {
@@ -272,7 +272,7 @@ header.site-header.sticky .site-nav ul li a:hover {
   color: #fff;
 }
 .footer-adresse p {
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
 }
 
 .mails-names a {
@@ -325,19 +325,19 @@ header.site-header.sticky .site-nav ul li a:hover {
 }
 .cookie-alert.show h4 {
   font-size: 23PX;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
 }
 
 a.btn.btn-primary.accept-cookies {
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   padding: 6px 22px;
   font-size: 20px;
-  border: 1px solid rgba(3, 28, 36, 0.9294117647);
+  border: 1px solid #362c2c;
 }
 a.btn.btn-primary.accept-cookies:hover {
   background-color: transparent;
   color: #0C0B0B;
-  border: 1px solid rgba(3, 28, 36, 0.9294117647);
+  border: 1px solid #362c2c;
 }
 
 /*cookie end*/
@@ -355,7 +355,7 @@ a.btn.btn-primary.accept-cookies:hover {
   padding: 60px 0 0 0;
 }
 .contacttext h3 {
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
 }
 
 .contact-form .about_us_content {
@@ -373,10 +373,10 @@ a.btn.btn-primary.accept-cookies:hover {
   display: block;
   width: 100%;
   height: 4rem;
-  border: 1px solid rgba(3, 28, 36, 0.9294117647);
+  border: 1px solid #362c2c;
   padding: 2rem 2rem;
   background: transparent;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
 }
 
 .contact-form .input-control:focus-visible {
@@ -389,8 +389,8 @@ a.btn.btn-primary.accept-cookies:hover {
 }
 
 .contact-form .form-group .submit-btn {
-  background: rgba(3, 28, 36, 0.9294117647);
-  border: 1px solid rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
+  border: 1px solid #362c2c;
   transition: all 0.2s linear;
   display: inline-block;
   padding: 0.8rem 4rem;
@@ -405,7 +405,7 @@ a.btn.btn-primary.accept-cookies:hover {
 .contact-form .form-group label {
   display: inline-block;
   padding-bottom: 5px;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
   transition: all 0.2s linear;
   text-transform: capitalize;
   font-size: 18px;
@@ -446,14 +446,14 @@ a.btn.btn-primary.accept-cookies:hover {
   content: "";
   position: absolute;
   height: 5px;
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   width: 5px;
   border-radius: 30px;
   left: -10px;
   top: 8px;
 }
 .privacy-policy .content-wrap h3 {
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
 }
 .privacy-policy .content-wrap p {
   color: #0C0B0B;
@@ -473,7 +473,7 @@ a.btn.btn-primary.accept-cookies:hover {
   content: "";
   position: absolute;
   height: 5px;
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   width: 5px;
   border-radius: 30px;
   left: -10px;
@@ -485,7 +485,7 @@ a.btn.btn-primary.accept-cookies:hover {
   line-height: 25px;
 }
 .terms .content-wrap h3 {
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
 }
 
 /*privacy-policy end*/
@@ -604,7 +604,7 @@ section.compare h2::before {
   bottom: 2px;
   transition: all 0.3s ease;
   padding: 20px 30px;
-  background-color: rgba(3, 28, 36, 0.8);
+  background-color: #362c2c;
   margin: 0 auto;
   right: 0;
   border-radius: 8px;
@@ -662,22 +662,22 @@ section.compare h2::before {
   height: 100%;
 }
 .whatdocard h3 {
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
 }
 .whatdocard p {
   margin: 25px 0;
 }
 
 .whatdocard .primary-btn {
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   color: #fff;
-  border: 1px solid rgba(3, 28, 36, 0.9294117647);
+  border: 1px solid #362c2c;
 }
 .whatdocard .primary-btn:hover {
   background: transparent;
 }
 .whatdocard .primary-btn:hover a {
-  color: rgba(3, 28, 36, 0.9294117647) !important;
+  color: #362c2c !important;
 }
 
 .whatdocards-main {

@@ -39,7 +39,7 @@ p {
     font-size: 17px;
     font-weight: 500;
     line-height: normal;
-    color: $clr-darkishgreen;
+    color: $clr-brown;
     font-family: "Gothic A1", sans-serif;
 }
 
@@ -65,7 +65,7 @@ h2 {
     line-height: 45px;
     font-weight: 600;
     font-family: "Cormorant Garamond", serif;
-    color: $clr-darkishgreen;
+    color: $clr-brown;
     margin-bottom: 25px;
     max-width: 60%;
     position: relative;
@@ -79,7 +79,7 @@ h2 {
     &::before {
         position: absolute;
         content: "";
-        background: $clr-darkishgreen;
+        background: $clr-brown;
         height: 2px;
         width: 150px;
         bottom: -10px;

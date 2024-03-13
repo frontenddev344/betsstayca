@@ -36,7 +36,7 @@ p {
   font-size: 17px;
   font-weight: 500;
   line-height: normal;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
   font-family: "Gothic A1", sans-serif;
 }
 
@@ -63,7 +63,7 @@ h2 {
   line-height: 45px;
   font-weight: 600;
   font-family: "Cormorant Garamond", serif;
-  color: rgba(3, 28, 36, 0.9294117647);
+  color: #362c2c;
   margin-bottom: 25px;
   max-width: 60%;
   position: relative;
@@ -78,7 +78,7 @@ h2 {
 h2::before {
   position: absolute;
   content: "";
-  background: rgba(3, 28, 36, 0.9294117647);
+  background: #362c2c;
   height: 2px;
   width: 150px;
   bottom: -10px;
@@ -127,7 +127,7 @@ h3 {
     right: 0;
     bottom: 0;
     width: 300px;
-    background: rgba(3, 28, 36, 0.9294117647);
+    background: #362c2c;
     transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
     transform: translateX(-100%);
   }

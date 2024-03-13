@@ -50,10 +50,10 @@ html {
     background: $clr-white;
     display: inline-block;
     padding: 8px 30px;
-    color: $clr-darkishgreen;
+    color: $clr-brown;
     font-size: 18px;
     border-radius: 3px;
-    border: 1px solid $clr-darkishgreen;
+    border: 1px solid $clr-brown;
 
     &:hover {
         background-color: transparent;
@@ -78,7 +78,7 @@ html {
 
 
 ::-webkit-scrollbar-thumb {
-    background: $clr-darkishgreen;
+    background: $clr-brown;
     border-radius: 2px;
 }
 
@@ -107,7 +107,7 @@ header.site-header {
 }
 
 header.site-header.sticky {
-    background: $clr-darkishgreen;
+    background: $clr-brown;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding: 14px 0;
@@ -126,7 +126,7 @@ header.site-header.sticky .site-nav ul li a:hover {
 
 .site-logo img {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .site-nav a {
@@ -173,7 +173,7 @@ header.site-header.sticky .site-nav ul li a:hover {
 
 /*footer-css-start*/
 .footer {
-    background: $clr-darkishgreen;
+    background: $clr-brown;
     padding: 50px 0;
 
     &-logo {
@@ -203,7 +203,7 @@ header.site-header.sticky .site-nav ul li a:hover {
         }
 
         p {
-            color: $clr-darkishgreen;
+            color: $clr-brown;
         }
     }
 
@@ -267,20 +267,20 @@ header.site-header.sticky .site-nav ul li a:hover {
 
     h4 {
         font-size: 23PX;
-        color: $clr-darkishgreen;
+        color: $clr-brown;
     }
 }
 
 a.btn.btn-primary.accept-cookies {
-    background: $clr-darkishgreen;
+    background: $clr-brown;
     padding: 6px 22px;
     font-size: 20px;
-    border: 1px solid $clr-darkishgreen;
+    border: 1px solid $clr-brown;
 
     &:hover {
         background-color: transparent;
         color: $clr-black;
-        border: 1px solid $clr-darkishgreen;
+        border: 1px solid $clr-brown;
     }
 }
 
@@ -301,7 +301,7 @@ a.btn.btn-primary.accept-cookies {
     padding: 60px 0 0 0;
 
     h3 {
-        color: $clr-darkishgreen;
+        color: $clr-brown;
     }
 }
 
@@ -321,10 +321,10 @@ a.btn.btn-primary.accept-cookies {
     display: block;
     width: 100%;
     height: 4rem;
-    border: 1px solid $clr-darkishgreen;
+    border: 1px solid $clr-brown;
     padding: 2rem 2rem;
     background: transparent;
-    color: $clr-darkishgreen;
+    color: $clr-brown;
 }
 
 .contact-form .input-control:focus-visible {
@@ -337,8 +337,8 @@ a.btn.btn-primary.accept-cookies {
 }
 
 .contact-form .form-group .submit-btn {
-    background: $clr-darkishgreen;
-    border: 1px solid $clr-darkishgreen;
+    background: $clr-brown;
+    border: 1px solid $clr-brown;
     transition: all 0.2s linear;
     display: inline-block;
     padding: 0.8rem 4rem;
@@ -354,7 +354,7 @@ a.btn.btn-primary.accept-cookies {
 .contact-form .form-group label {
     display: inline-block;
     padding-bottom: 5px;
-    color: $clr-darkishgreen;
+    color: $clr-brown;
     transition: all 0.2s linear;
     text-transform: capitalize;
     font-size: 18px;
@@ -398,7 +398,7 @@ a.btn.btn-primary.accept-cookies {
                 content: "";
                 position: absolute;
                 height: 5px;
-                background: $clr-darkishgreen;
+                background: $clr-brown;
                 width: 5px;
                 border-radius: 30px;
                 left: -10px;
@@ -408,7 +408,7 @@ a.btn.btn-primary.accept-cookies {
 
 
         h3 {
-            color: $clr-darkishgreen;
+            color: $clr-brown;
         }
 
         p {
@@ -432,7 +432,7 @@ a.btn.btn-primary.accept-cookies {
                 content: "";
                 position: absolute;
                 height: 5px;
-                background: $clr-darkishgreen;
+                background: $clr-brown;
                 width: 5px;
                 border-radius: 30px;
                 left: -10px;
@@ -447,7 +447,7 @@ a.btn.btn-primary.accept-cookies {
         }
 
         h3 {
-            color: $clr-darkishgreen;
+            color: $clr-brown;
         }
     }
 }
@@ -581,7 +581,7 @@ section.compare h2::before {
             bottom: 2px;
             transition: all .3s ease;
             padding: 20px 30px;
-            background-color: rgb(3 28 36 / 80%);
+            background-color: #362c2c;
             margin: 0 auto;
             right: 0;
             border-radius: 8px;
@@ -649,7 +649,7 @@ section.compare h2::before {
     height: 100%;
 
     h3 {
-        color: $clr-darkishgreen;
+        color: $clr-brown;
     }
 
     p {
@@ -658,15 +658,15 @@ section.compare h2::before {
 }
 
 .whatdocard .primary-btn {
-    background: $clr-darkishgreen;
+    background: $clr-brown;
     color: $clr-white;
-    border: 1px solid $clr-darkishgreen;
+    border: 1px solid $clr-brown;
 
     &:hover {
         background: transparent;
 
         a {
-            color: $clr-darkishgreen !important;
+            color: $clr-brown !important;
         }
     }
 
