@@ -144,6 +144,7 @@ html {
   font-size: 18px;
   border-radius: 3px;
   border: 1px solid #362c2c;
+  cursor: pointer;
 }
 .primary-btn:hover {
   background-color: transparent;
