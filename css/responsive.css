@@ -31,6 +31,11 @@ button {
   left: 50%;
   top: 50%;
 }
+@media screen and (max-width: 575px) {
+  .bannertitle {
+    max-width: 80%;
+  }
+}
 
 p {
   font-size: 17px;
@@ -50,11 +55,6 @@ h1 {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 35px;
-  }
-}
-@media screen and (max-width: 575px) {
-  h1 {
-    font-size: 25px;
   }
 }
 
