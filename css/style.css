@@ -174,6 +174,28 @@ html {
 
 /*global end*/
 /*header start*/
+.searchbar .btn {
+  background: #362c2c;
+  color: #fff;
+  padding: 12px 12px;
+}
+
+.searchbar .form-control {
+  font-family: "Gothic A1";
+  font-size: 15px;
+  padding: 7px 12px;
+  color: #362c2c;
+}
+
+.searchbar i.fa.fa-search {
+  font-size: 15px;
+}
+
+.searchbar .form-control:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
 header.site-header {
   background: transparent;
   font-size: 18px;
